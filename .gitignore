@@ -1,0 +1,27 @@
+# -----------------------------------------------------------------------------
+# SysScope .gitignore
+# This repo is PUBLIC. The files below can contain machine-specific data
+# (serials, hostnames, paths) and MUST NEVER be committed.
+# -----------------------------------------------------------------------------
+
+# Generated audit output (may embed serials / hostnames / user paths)
+sysscope-report-*.md
+*-metrics.json
+sysscope-metrics*.json
+*.report.md
+
+# Node / npx artifacts
+node_modules/
+npm-debug.log*
+package-lock.json
+.npm/
+
+# OS / editor cruft
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Local scratch
+/tmp/
+*.local

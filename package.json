@@ -1,0 +1,61 @@
+{
+  "name": "sysscope",
+  "version": "1.0.0",
+  "description": "🔭 Audit your Mac/Linux machine and see exactly which local AI models (Ollama) and CPU/GPU dev workloads it can actually run — model-by-model fit verdict, health scorecard, and zero installs.",
+  "bin": {
+    "sysscope": "bin/sysscope.js"
+  },
+  "files": [
+    "bin/",
+    "audit-bundle.sh",
+    "audit.sh",
+    "lib_core.sh",
+    "lib_report.sh",
+    "mod_system.sh",
+    "mod_cpu.sh",
+    "mod_memory.sh",
+    "mod_gpu.sh",
+    "mod_storage.sh",
+    "mod_power.sh",
+    "mod_software.sh",
+    "mod_ai.sh",
+    "mod_recommend.sh",
+    "build.sh",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bash build.sh",
+    "audit": "bash audit.sh"
+  },
+  "keywords": [
+    "system-audit",
+    "hardware",
+    "ollama",
+    "llm",
+    "local-ai",
+    "apple-silicon",
+    "macos",
+    "gpu",
+    "cli",
+    "diagnostics",
+    "ai-readiness"
+  ],
+  "author": "aoneahsan",
+  "license": "MIT",
+  "homepage": "https://github.com/aoneahsan/sysscope#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aoneahsan/sysscope.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aoneahsan/sysscope/issues"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "engines": {
+    "node": ">=14"
+  }
+}
