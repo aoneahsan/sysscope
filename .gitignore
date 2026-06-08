@@ -16,6 +16,9 @@ npm-debug.log*
 package-lock.json
 .npm/
 
+# Never commit npm auth — tokens live in ~/.npmrc (user-level), not here
+.npmrc
+
 # OS / editor cruft
 .DS_Store
 *.swp

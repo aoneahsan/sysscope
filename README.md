@@ -1,6 +1,6 @@
 # 🔭 SysScope — System Capability & AI-Readiness Audit
 
-**[GitHub repo](https://github.com/aoneahsan/sysscope)** · **[Gist mirror](https://gist.github.com/aoneahsan/d55e9709334ef5723468ad44fa667c6d)** · run it instantly: `npx github:aoneahsan/sysscope`
+**[GitHub repo](https://github.com/aoneahsan/sysscope)** · **[Gist mirror](https://gist.github.com/aoneahsan/d55e9709334ef5723468ad44fa667c6d)** · run it instantly: `npx sysscope`
 
 A small, **modular, read-only** shell tool that audits any Mac (and most Linux boxes) and tells you, in plain language:
 
@@ -16,7 +16,7 @@ It prints a colorized terminal report **and** writes a shareable Markdown report
 **▶ Try it now (no install):**
 
 ```bash
-npx github:aoneahsan/sysscope
+npx sysscope
 ```
 
 ---
@@ -40,18 +40,20 @@ npx github:aoneahsan/sysscope
 ### Option A — run it with `npx` (no install, no clone) ⭐
 
 ```bash
-npx github:aoneahsan/sysscope
+npx sysscope
 ```
 
 That's the whole thing. `npx` fetches and runs it; you get an interactive menu, then a saved `sysscope-report-*.md`. Pass any flag straight through:
 
 ```bash
-npx github:aoneahsan/sysscope --ai-only      # "which models can I run?"
-npx github:aoneahsan/sysscope --quick --yes  # fast, unattended
-npx github:aoneahsan/sysscope --share        # redacted, shareable report
+npx sysscope --ai-only      # "which models can I run?"
+npx sysscope --quick --yes  # fast, unattended
+npx sysscope --share        # redacted, shareable report
 ```
 
 > Needs Node (for `npx`) and `bash` (built in on macOS/Linux; use WSL/Git Bash on Windows). The launcher only runs the local audit — it makes no network calls.
+>
+> Want the very latest (unreleased) version straight from `main`? Use `npx github:aoneahsan/sysscope`.
 
 ### Option B — clone the repo (modular version)
 

@@ -3,7 +3,7 @@
 #  🔭 SysScope — System Capability & AI-Readiness Audit
 #  Portable, modular, read-only auditor for macOS (Linux best-effort).
 #  Repo: https://github.com/aoneahsan/sysscope   ·   License: MIT
-#  Run without install:  npx github:aoneahsan/sysscope
+#  Run without install:  npx sysscope   (or latest from source: npx github:aoneahsan/sysscope)
 #
 #  Usage:   ./audit.sh [options]
 #  Quick:   ./audit.sh --quick
