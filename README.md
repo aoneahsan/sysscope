@@ -1,5 +1,7 @@
 # 🔭 SysScope — System Capability & AI-Readiness Audit
 
+**[GitHub repo](https://github.com/aoneahsan/sysscope)** · **[Gist mirror](https://gist.github.com/aoneahsan/d55e9709334ef5723468ad44fa667c6d)** · run it instantly: `npx github:aoneahsan/sysscope`
+
 A small, **modular, read-only** shell tool that audits any Mac (and most Linux boxes) and tells you, in plain language:
 
 - **What hardware you have** — CPU, GPU, Neural Engine, RAM, storage, battery, thermals
