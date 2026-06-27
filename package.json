@@ -2,9 +2,7 @@
   "name": "sysscope",
   "version": "1.0.0",
   "description": "🔭 Audit your Mac/Linux machine and see exactly which local AI models (Ollama) and CPU/GPU dev workloads it can actually run — model-by-model fit verdict, health scorecard, and zero installs.",
-  "bin": {
-    "sysscope": "bin/sysscope.js"
-  },
+  "bin": "bin/sysscope.js",
   "files": [
     "bin/",
     "audit-bundle.sh",
