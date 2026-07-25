@@ -29,12 +29,14 @@ When adding example output to docs, use **redacted / generic placeholders only**
 - `mod_ai.sh` — the local-AI model-fit engine; the model catalog/sizes live here.
 - `build.sh` — regenerates the single-file `audit-bundle.sh`. **Run it after editing any module.**
 - `bin/sysscope.js` — Node launcher so `npx` runs the bundled script (passes args + exit code through).
+- `docs/PACKAGES.md` — dependency + published-file inventory. `docs/REPORTED-ISSUES.md` — **open issue queue; read it before starting work** (5 open as of 2026-07-25, ISSUE-001 is a privacy leak).
 
 ## 🔁 Workflow when changing the tool
 1. Edit the relevant `mod_*.sh` / `lib_*.sh`.
 2. `bash build.sh` to refresh `audit-bundle.sh` (the npx/curl distributable).
-3. `bash -n *.sh` to syntax-check, and run `./audit.sh --quick --yes --no-report` to smoke-test.
-4. Commit (after the sensitive-data scan above).
+3. `npm run lint` (bash -n on every `*.sh` + `node --check` on the launcher), then run `./audit.sh --quick --yes --no-report` to smoke-test.
+4. Add a `CHANGELOG.md` entry under `Unreleased`.
+5. Commit (after the sensitive-data scan above).
 
 See also `AGENTS.md` (same rules, vendor-neutral).
 

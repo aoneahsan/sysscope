@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="SysScope logo">
+  <title>SysScope</title>
+  <defs>
+    <linearGradient id="ss-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0EA5E9" />
+      <stop offset="55%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#0E7490" />
+    </linearGradient>
+  </defs>
+
+  <rect width="128" height="128" rx="28" fill="url(#ss-bg)" />
+
+  <!-- tripod -->
+  <g stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.92">
+    <path d="M64 78 V96" />
+    <path d="M64 96 L50 111" />
+    <path d="M64 96 L78 111" />
+  </g>
+
+  <!-- telescope barrel, tilted toward the sky -->
+  <g transform="rotate(-32 64 64)">
+    <rect x="30" y="55" width="62" height="21" rx="10.5" fill="#FFFFFF" />
+    <rect x="88" y="48" width="15" height="35" rx="7.5" fill="#FFFFFF" />
+    <rect x="21" y="59" width="12" height="13" rx="6" fill="#FFFFFF" opacity="0.85" />
+    <circle cx="95.5" cy="65.5" r="7" fill="#0E7490" />
+  </g>
+
+  <!-- what it is looking at -->
+  <g fill="#FFFFFF" opacity="0.9">
+    <path d="M97 24 l2.6 6.4 6.4 2.6 -6.4 2.6 -2.6 6.4 -2.6 -6.4 -6.4 -2.6 6.4 -2.6 Z" />
+    <circle cx="82" cy="44" r="2.6" />
+  </g>
+</svg>

@@ -43,8 +43,20 @@ mod_storage() {
   if [ "$DEEP" = "1" ]; then
     subsection "Largest items in your home folder"
     note "Scanning ~ — this can take a moment…"
+    # Folder names in $HOME are personal data — they routinely carry employer,
+    # client and project names. Under --share (REDACT=1) the report is presented
+    # as safe to post publicly, so the NAME is withheld and only the size, which
+    # is the diagnostic signal, is kept.
+    [ "$REDACT" = "1" ] && note "Folder names are withheld in share mode; sizes only."
     ( cd "$HOME" 2>/dev/null && du -sh -- * .[!.]* 2>/dev/null | sort -rh | head -10 ) | \
-      while IFS= read -r liney; do [ -n "$liney" ] && bullet "$liney"; done
+      while IFS= read -r liney; do
+        [ -n "$liney" ] || continue
+        if [ "$REDACT" = "1" ]; then
+          bullet "$(printf '%s' "$liney" | cut -f1)	$(rd "x")"
+        else
+          bullet "$liney"
+        fi
+      done
   fi
 
   j disk_total_gb "$DISK_TOTAL_GB"

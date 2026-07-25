@@ -25,7 +25,8 @@ When adding example output to docs, use **redacted / generic placeholders only**
 ## 🧱 Project layout & workflow
 - Entry point `audit.sh` sources `lib_*.sh` + `mod_*.sh`; each `mod_*.sh` covers one subsystem.
 - The local-AI fit engine and model catalog live in `mod_ai.sh`.
-- After editing any module, run `bash build.sh` to regenerate the single-file `audit-bundle.sh` (the npx/curl distributable), then `bash -n *.sh` and a quick `./audit.sh --quick --yes --no-report` smoke test.
+- After editing any module, run `bash build.sh` to regenerate the single-file `audit-bundle.sh` (the npx/curl distributable), then `npm run lint` and a quick `./audit.sh --quick --yes --no-report` smoke test. Add a `CHANGELOG.md` entry under `Unreleased`.
+- `docs/PACKAGES.md` — dependency + published-file inventory. `docs/REPORTED-ISSUES.md` — **open issue queue; read it before starting work** (5 open as of 2026-07-25, ISSUE-001 is a privacy leak).
 
 This file mirrors `CLAUDE.md`; keep both in sync if you change the rules.
 
