@@ -902,7 +902,7 @@ mod_recommend() {
 #  Help:    ./audit.sh --help
 # =============================================================================
 
-SYSSCOPE_VERSION="1.0.1"
+SYSSCOPE_VERSION="1.0.3"
 
 # ---- Locate & load modules (this block is stripped in the bundled build) ----
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" 2>/dev/null && pwd)

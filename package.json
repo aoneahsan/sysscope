@@ -1,6 +1,6 @@
 {
   "name": "sysscope",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "See which local AI models and dev workloads your Mac or Linux machine can actually run.",
   "bin": "bin/sysscope.js",
   "files": [
