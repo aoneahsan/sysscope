@@ -23,7 +23,7 @@ never from running a workload.
 
 | | |
 |---|---|
-| **Version** | `1.0.1` |
+| **Version** | `1.0.4` |
 | **License** | MIT |
 | **Node** | `>=14` — only for `npx`; the tool itself is Bash |
 | **Platforms** | macOS · Linux · Windows via WSL |
@@ -375,8 +375,7 @@ A dedicated documentation site is in progress; this README stays the canonical r
 <a id="changelog"></a>
 ## 🔄 Changelog&nbsp;[#](#changelog)
 
-Latest release: **`1.0.1`** — MIT copyright attributed to Ahsan Mahmood.
-Full history: [CHANGELOG.md](https://github.com/aoneahsan/sysscope/blob/main/CHANGELOG.md).
+Latest release: **`1.0.4`** — documentation only: the at-a-glance table above reported the previous version, because it is a static duplicate of `package.json`. Full history in the changelog.
 
 <a id="contributing"></a>
 ## 🤝 Contributing&nbsp;[#](#contributing)

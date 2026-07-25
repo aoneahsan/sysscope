@@ -10,6 +10,14 @@ CLI: its flags, its exit codes, and the key names in `--json` output.
 > history and the npm registry. The repository opens with a single squashed commit, so the `1.0.0` entry
 > describes the shipped feature set rather than an incremental list of changes. Dates are npm publish dates.
 
+## [1.0.4] - 2026-07-25
+
+### Fixed
+
+- **The README stated the previous version.** The at-a-glance `Version` row is a static duplicate of
+  `package.json.version`, so it drifted the moment the version was bumped — it shipped stale in eight of the
+  fleet's packages at once. The row, and any native version string, now move with the release.
+
 ## Unreleased
 
 ### Added
